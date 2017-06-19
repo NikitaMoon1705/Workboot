@@ -5,13 +5,13 @@ package com.workboot.server.model;
  */
 public class User{
 
-    private final long id;
+    private long id;
 
-    private final String firstname;
+    private String firstname;
 
-    private final String lastname;
+    private String lastname;
 
-    private final long phone;
+    private long phone;
 
     public User(long id, String firstname, String lastname, long phone) {
         this.id = id;
@@ -24,15 +24,31 @@ public class User{
         return id;
     }
 
+    public void setId(long id) {
+        this.id = id;
+    }
+
     public String getFirstname() {
         return firstname;
+    }
+
+    public void setFirstname(String firstname) {
+        this.firstname = firstname;
     }
 
     public String getLastname() {
         return lastname;
     }
 
+    public void setLastname(String lastname) {
+        this.lastname = lastname;
+    }
+
     public long getPhone() {
         return phone;
+    }
+
+    public void setPhone(long phone) {
+        this.phone = phone;
     }
 }
